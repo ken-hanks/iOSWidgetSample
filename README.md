@@ -14,7 +14,8 @@ Project 'iOSWidgetSample' is a iOS14 widget sample, show news list in a widget. 
 5. Start Xcode, open 'iOSWidgetSample.xcworkspace'.
 
 ## Notice
-The news list is caught from alapi free API, It has a limit of 100 times per day.
+The news list is caught from alapi free API, It has a limit of 100 times per day.  
+
 
 
 ---
