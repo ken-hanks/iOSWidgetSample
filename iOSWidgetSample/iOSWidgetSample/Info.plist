@@ -64,5 +64,10 @@
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>Widget News Sample</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

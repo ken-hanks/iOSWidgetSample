@@ -19,6 +19,15 @@
 		ADB7FA7A251D848000DABC19 /* SingleNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA79251D848000DABC19 /* SingleNews.swift */; };
 		ADB7FA7C251D848900DABC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB7FA7B251D848900DABC19 /* Assets.xcassets */; };
 		ADB7FA80251D848900DABC19 /* SingleNewsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADB7FA72251D848000DABC19 /* SingleNewsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADB7FA91251D8BAF00DABC19 /* NewsSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA90251D8BAF00DABC19 /* NewsSummary.swift */; };
+		ADB7FA92251D8BAF00DABC19 /* NewsSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA90251D8BAF00DABC19 /* NewsSummary.swift */; };
+		ADB7FA96251D8E9100DABC19 /* ResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA95251D8E9100DABC19 /* ResponseBase.swift */; };
+		ADB7FA97251D8E9100DABC19 /* ResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA95251D8E9100DABC19 /* ResponseBase.swift */; };
+		ADB7FA9C251D8EDE00DABC19 /* apiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA9B251D8EDE00DABC19 /* apiUrl.swift */; };
+		ADB7FA9D251D8EDE00DABC19 /* apiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FA9B251D8EDE00DABC19 /* apiUrl.swift */; };
+		ADB7FAA1251D8F3700DABC19 /* ClientAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FAA0251D8F3700DABC19 /* ClientAgent.swift */; };
+		ADB7FAA2251D8F3700DABC19 /* ClientAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FAA0251D8F3700DABC19 /* ClientAgent.swift */; };
+		ADB7FAA6251D934B00DABC19 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB7FAA5251D934B00DABC19 /* ImageHelper.swift */; };
 		BB9E3A03455A8A078D13E7AD /* libPods-SingleNewsExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D02F10F49EEBF817A9400C /* libPods-SingleNewsExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +75,11 @@
 		ADB7FA79251D848000DABC19 /* SingleNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNews.swift; sourceTree = "<group>"; };
 		ADB7FA7B251D848900DABC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB7FA7D251D848900DABC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB7FA90251D8BAF00DABC19 /* NewsSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSummary.swift; sourceTree = "<group>"; };
+		ADB7FA95251D8E9100DABC19 /* ResponseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBase.swift; sourceTree = "<group>"; };
+		ADB7FA9B251D8EDE00DABC19 /* apiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiUrl.swift; sourceTree = "<group>"; };
+		ADB7FAA0251D8F3700DABC19 /* ClientAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAgent.swift; sourceTree = "<group>"; };
+		ADB7FAA5251D934B00DABC19 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		C89A68109A5288D5F0AEB61A /* Pods-SingleNewsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleNewsExtension.release.xcconfig"; path = "Target Support Files/Pods-SingleNewsExtension/Pods-SingleNewsExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +139,8 @@
 		ADB7FA58251D83E000DABC19 /* iOSWidgetSample */ = {
 			isa = PBXGroup;
 			children = (
+				ADB7FA9A251D8EB300DABC19 /* ClientAgent */,
+				ADB7FA8F251D885600DABC19 /* Model */,
 				ADB7FA59251D83E000DABC19 /* AppDelegate.swift */,
 				ADB7FA5B251D83E000DABC19 /* SceneDelegate.swift */,
 				ADB7FA5D251D83E000DABC19 /* ViewController.swift */,
@@ -153,8 +169,27 @@
 				ADB7FA79251D848000DABC19 /* SingleNews.swift */,
 				ADB7FA7B251D848900DABC19 /* Assets.xcassets */,
 				ADB7FA7D251D848900DABC19 /* Info.plist */,
+				ADB7FAA5251D934B00DABC19 /* ImageHelper.swift */,
 			);
 			path = SingleNews;
+			sourceTree = "<group>";
+		};
+		ADB7FA8F251D885600DABC19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7FA90251D8BAF00DABC19 /* NewsSummary.swift */,
+				ADB7FA95251D8E9100DABC19 /* ResponseBase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADB7FA9A251D8EB300DABC19 /* ClientAgent */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7FA9B251D8EDE00DABC19 /* apiUrl.swift */,
+				ADB7FAA0251D8F3700DABC19 /* ClientAgent.swift */,
+			);
+			path = ClientAgent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB7FA9C251D8EDE00DABC19 /* apiUrl.swift in Sources */,
 				ADB7FA5E251D83E000DABC19 /* ViewController.swift in Sources */,
 				ADB7FA5A251D83E000DABC19 /* AppDelegate.swift in Sources */,
+				ADB7FA96251D8E9100DABC19 /* ResponseBase.swift in Sources */,
 				ADB7FA5C251D83E000DABC19 /* SceneDelegate.swift in Sources */,
+				ADB7FA91251D8BAF00DABC19 /* NewsSummary.swift in Sources */,
+				ADB7FAA1251D8F3700DABC19 /* ClientAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB7FA9D251D8EDE00DABC19 /* apiUrl.swift in Sources */,
+				ADB7FAA2251D8F3700DABC19 /* ClientAgent.swift in Sources */,
+				ADB7FA97251D8E9100DABC19 /* ResponseBase.swift in Sources */,
 				ADB7FA7A251D848000DABC19 /* SingleNews.swift in Sources */,
+				ADB7FA92251D8BAF00DABC19 /* NewsSummary.swift in Sources */,
+				ADB7FAA6251D934B00DABC19 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

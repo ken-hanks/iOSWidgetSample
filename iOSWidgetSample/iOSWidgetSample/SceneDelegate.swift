@@ -47,6 +47,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        
+        //接收来自Widget的消息
+        for context in URLContexts {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadNews"), object: self, userInfo: ["url" : context.url])
+        }
+    }
 }
 
