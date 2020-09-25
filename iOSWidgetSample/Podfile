@@ -1,0 +1,16 @@
+platform :ios, '14.0'
+inhibit_all_warnings!
+
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+
+target :iOSWidgetSample do
+    pod 'Alamofire', '~> 4.9.1'
+    pod 'SwiftyJSON'
+end
+
+target :SingleNewsExtension do
+    pod 'Alamofire', '~> 4.9.1'
+    pod 'SwiftyJSON'
+end
+
