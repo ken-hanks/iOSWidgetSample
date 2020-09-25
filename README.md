@@ -17,6 +17,9 @@ Project 'iOSWidgetSample' is a iOS14 widget sample, show news list in a widget. 
 The news list is caught from alapi free API, It has a limit of 100 times per day.
 
 
+
+
+
 ## 简介
 'iOSWidgetSample' 是一个基于iOS14的小窗体（Widget）演示程序，可以在小窗体中显示一个新闻列表。不同尺寸的Widget，界面显示不同的布局。
 
